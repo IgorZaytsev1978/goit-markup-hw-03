@@ -104,25 +104,32 @@ body {
   background-color: var(--background-title-footer);
   width: 1600px;
   height: 600px;
-  flex-direction: column;
- 
+
 }
 .business-solutions {
   width: 696px;
   height: 120px;
-  margin-bottom: 30px;
   margin-left: 452px;
   margin-right: 452px;
   margin-top: 0px;
+  padding-top: 200px;
   font-size: 44px;
   line-height: 1.36;
   font-weight: 900;
   letter-spacing: 0.06em;
   color: var(--white-color);
   text-transform: uppercase;
+  text-align:center;
 }
 
 .order-services {
+  width: 216px;
+  height: 50px;
+  margin-left: 692px;
+  margin-right: 692px;
+  border: 0px;
+  padding: 0px;
+  margin-top: 115px;
   font-family: "Roboto";
   font-size: 16px;
   line-height: 1.88;
