@@ -35,16 +35,19 @@ body {
 }
 .container {
   width: 1200px;
+  display: flex;
 }
 .navigation {
   display: flex;
 }
-.site-nav {
-  display: flex;
-  text-decoration: none;
-}
+
 .logo-up {
   font-family: "Raleway";
+  height: 31px;
+  margin-left: 15px;
+  margin-right: 93px;
+  margin-top: 25px;
+  margin-bottom: 24px;
   font-size: 26px;
   line-height: 1.19;
   font-weight: 700;
@@ -60,6 +63,17 @@ body {
   letter-spacing: 0.03em;
   color:var(--blue-color);
 }
+.site-nav {
+  width: 281px;
+  height: 16px;
+  padding-left: 0px;
+  justify-content: space-between;
+  margin-top: 33px;
+  margin-right: 344px;
+  display: flex;
+  text-decoration: none;
+
+}
 .nav-link {
   font-size: 14px;
   line-height: 1.17;
@@ -70,6 +84,11 @@ body {
 }
 .contact {
   display: flex;
+  justify-content: space-between;
+  width: 307px;
+  height: 16px;
+  margin-top: 33px;
+  padding-left: 0px;
 }
 .contact-header {
   font-size: 14px;
@@ -79,10 +98,22 @@ body {
   text-decoration: none;
   color: var(--header-contact-color);
 }
+
 .first-section {
+  margin-top: 0px;
   background-color: var(--background-title-footer);
+  width: 1600px;
+  height: 600px;
+  flex-direction: column;
+ 
 }
 .business-solutions {
+  width: 696px;
+  height: 120px;
+  margin-bottom: 30px;
+  margin-left: 452px;
+  margin-right: 452px;
+  margin-top: 0px;
   font-size: 44px;
   line-height: 1.36;
   font-weight: 900;
