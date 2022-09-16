@@ -33,9 +33,12 @@ body {
   color:var(--basic-dark-color); 
   background-color: var(--white-color);
 }
+header .container {
+  display: flex;
+}
 .container {
   width: 1200px;
-  display: flex;
+  margin-left: 200px;
 }
 .navigation {
   display: flex;
@@ -101,6 +104,7 @@ body {
 
 .first-section {
   margin-top: 0px;
+  margin-bottom: 94px;
   background-color: var(--background-title-footer);
   width: 1600px;
   height: 600px;
@@ -108,7 +112,7 @@ body {
 }
 .business-solutions {
   width: 696px;
-  height: 120px;
+  margin-bottom: 0px;
   margin-left: 452px;
   margin-right: 452px;
   margin-top: 0px;
@@ -125,14 +129,13 @@ body {
 .order-services {
   width: 216px;
   height: 50px;
+  border: 0px;
   margin-left: 692px;
   margin-right: 692px;
-  border: 0px;
-  padding: 0px;
-  margin-top: 115px;
+  margin-top: 30px;
   font-family: "Roboto";
   font-size: 16px;
-  line-height: 1.88;
+  line-height: 1.87;
   font-weight: 700;
   letter-spacing: 0.06em;
   background-color: var(--blue-color);
@@ -142,6 +145,18 @@ body {
 .visually-hidden {
    position: absolute; white-space: nowrap; width: 1px; height: 1px; overflow: hidden; border: 0; padding: 0; clip: rect(0 0 0 0); clip-path: inset(50%); margin: -1px; 
   }
+.box-feature {
+  width: 270px;
+}
+.box-feature-hidden {
+  display: flex;
+  width: 1170px;
+  padding-left: 0px;
+  margin-left: 15px;
+  margin-top: 0px;
+  margin-bottom: 94px;
+  justify-content: space-between;
+}
 .feature-list {
   font-size: 14px;
   line-height: 1.17;
@@ -149,12 +164,15 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--basic-dark-color);
+  margin-bottom: 10px;
+  margin-top: 0px;
 }
 .features-detail {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--header-contact-color);
+  margin-top: 0px;
 }
 .our-buisness {
   font-size: 36px;
@@ -162,9 +180,28 @@ body {
   font-weight: 700;
   letter-spacing: 0.03em;
   color: var(--basic-dark-color);
+  text-align: center;
+  margin-bottom: 50px;
+  margin-top: 0px;
+
+
 }
+.pictures-our-buisness {
+  display: flex;
+  width: 1170px;
+  justify-content: space-between;
+  margin-top: 0px;
+  margin-left: 15px;
+  padding: 0px;
+  margin-bottom: 94px;
+}
+
 .section-our-command {
   background-color: var(--footer-button-backgroung-color);
+  width: 1600px;
+  padding-left: 0px;
+  margin-top: 0px;
+  margin-bottom: 94px;
 }
 .our-command {
   font-size: 36px;
@@ -172,9 +209,23 @@ body {
   font-weight: 700;
   letter-spacing: 0.03em;
   color: var(--basic-dark-color);
+  padding-top: 94px;
+  text-align: center;
+  margin-bottom: 50px;
+  margin-top: 0px;
+}
+.team-members-ul {
+  display: flex;
+  width: 1170px;
+  padding: 0px;
+  justify-content: space-between;
+  margin-top: 0px;
+  margin-left: 215px;
+  margin-bottom: 94px;
 }
 .team-members {
   background-color: var(--white-color);
+  width: 270px;
 }
 .name-command {
   font-size: 16px;
@@ -182,15 +233,24 @@ body {
   font-weight: 500;
   letter-spacing: 0.03em;
   color: var(--basic-dark-color);
+  margin-top: 30px;
+  margin-bottom: 10px;
+  text-align: center;
 }
 .profession-command {
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--header-contact-color);
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 .footer {
   background-color: var(--background-title-footer);
+  width: 1600px;
+  height: 252px;
+  
 }
 .logo-down {
   font-family: "Raleway";
@@ -199,6 +259,11 @@ body {
   letter-spacing: 0.03em;
   text-decoration: none;
   color: var(--white-color);
+  display: inline-block;
+  margin-left: 215px;
+  margin-top: 60px;
+  margin-bottom: 20px;
+
 }
 
 .contact-footer-adress {
@@ -223,6 +288,20 @@ body {
   text-decoration: none;
   color: var(--footer-adress-color);
 }
+.container-hidden {
+  width: 1200px;
+  margin-left: 200px;
+  margin-top: 94px;
+}
+.filter {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 312px;
+  margin-right: 312px;
+  padding-left: 0px;
+  margin-bottom: 34px;
+  
+}
 .filter-button:hover,
 .filter-button:focus {
   color: var(--white-color);
@@ -238,19 +317,43 @@ body {
   color: var(--basic-dark-color);
   cursor: pointer;
 }
+.portfolio-projects {
+  display: flex;
+  flex-wrap: wrap;
+  width: 1170px;
+  margin-top: 0px;
+  margin-bottom: 94px;
+  gap: 30px;
+  padding-left: 0px;
+  
+}
+.block-project {
+  width: 370px;
+}
 .name-project {
   font-size: 18px;
   line-height: 2;
   font-weight: 700;
   letter-spacing: 0.06em;
   color: var(--basic-dark-color);
+  margin-top: 20px;
+  margin-left: 24px;
+  margin-bottom: 4px;
+
 }
 .type-project {
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
+  margin-top: 0px;
+  margin-bottom: 0px;
   color: var(--header-contact-color)
+
 }
 .contact-footer {
   font-style: normal;
+  margin-left: 215px;
+  padding: 0px;
+  margin-top: 0;
+  margin-bottom: 0px;
 }
