@@ -142,6 +142,7 @@ section {
   cursor: pointer;
   border-color: transparent;
   border-radius: 4px;
+  padding: 10px 32px;;
 }
 
 .visually-hidden {
@@ -179,7 +180,7 @@ section {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--header-contact-color);
-  margin-top: 0px;
+  margin: 0px;
 }
 .our-buisness {
   font-size: 36px;
@@ -270,6 +271,7 @@ section {
   letter-spacing: 0.03em;
   text-decoration: none;
   color: var(--white-color);
+  padding-bottom: 9px;
 }
 
 .contact-footer-mail {
@@ -278,6 +280,7 @@ section {
   letter-spacing: 0.03em;
   text-decoration: none;
   color: var(--footer-adress-color);
+  padding-bottom: 9px;
 }
 .contact-footer-tel {
   font-size: 14px;
