@@ -1,25 +1,32 @@
 :root {
-  --blue-color: #2196F3;
-  --blue-color-activ-button: #188CE8;
+  --blue-color: #2196f3;
+  --blue-color-activ-button: #188ce8;
   --black-color: #000000;
   --basic-dark-color: #212121;
   --header-contact-color: #757575;
-  --background-title-footer: #2F303A;
-  --white-color: #FFFFFF;
+  --background-title-footer: #2f303a;
+  --white-color: #ffffff;
   --footer-adress-color: rgba(255, 255, 255, 0.6);
-  --footer-button-backgroung-color: #F5F4FA;
+  --footer-button-backgroung-color: #f5f4fa;
+  --border-project: #eeeeee;
 }
 ul {
   list-style: none;
+  padding: 0;
+  margin: 0;
+}
+img {
+  display: block;
+  max-width: 100%;
 }
 .nav-link:hover,
 .nav-link:focus,
 .contact-header:hover,
 .contact-header:focus,
 .contact-footer-adress:hover,
-.contact-footer-adress:focus, 
+.contact-footer-adress:focus,
 .contact-footer-mail:hover,
-.contact-footer-mail:focus, 
+.contact-footer-mail:focus,
 .contact-footer-tel:hover,
 .contact-footer-tel:focus {
   color: var(--blue-color);
@@ -30,7 +37,7 @@ ul {
 }
 body {
   font-family: "Roboto", sans-serif;
-  color:var(--basic-dark-color); 
+  color: var(--basic-dark-color);
   background-color: var(--white-color);
 }
 header .container {
@@ -38,24 +45,24 @@ header .container {
 }
 .container {
   width: 1200px;
-  margin-left: 200px;
+  margin: auto;
+  padding: 0 15px;
+}
+section {
+  padding-bottom: 94px;
 }
 .navigation {
   display: flex;
 }
-
 .logo-up {
   font-family: "Raleway";
-  height: 31px;
-  margin-left: 15px;
+  padding-top: 24px;
   margin-right: 93px;
-  margin-top: 25px;
-  margin-bottom: 24px;
   font-size: 26px;
   line-height: 1.19;
   font-weight: 700;
   letter-spacing: 0.03em;
-  color:var(--black-color);
+  color: var(--black-color);
   text-decoration: none;
 }
 .blue-web {
@@ -64,18 +71,15 @@ header .container {
   line-height: 1.19;
   font-weight: 700;
   letter-spacing: 0.03em;
-  color:var(--blue-color);
+  color: var(--blue-color);
 }
 .site-nav {
   width: 281px;
-  height: 16px;
   padding-left: 0px;
   justify-content: space-between;
-  margin-top: 33px;
   margin-right: 344px;
   display: flex;
   text-decoration: none;
-
 }
 .nav-link {
   font-size: 14px;
@@ -83,14 +87,16 @@ header .container {
   font-weight: 500;
   letter-spacing: 0.02em;
   text-decoration: none;
-  color: var(--basic-dark-color)
+  color: var(--basic-dark-color);
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 .contact {
   display: flex;
   justify-content: space-between;
   width: 307px;
-  height: 16px;
-  margin-top: 33px;
+
   padding-left: 0px;
 }
 .contact-header {
@@ -100,38 +106,31 @@ header .container {
   letter-spacing: 0.02em;
   text-decoration: none;
   color: var(--header-contact-color);
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
-
 .first-section {
-  margin-top: 0px;
-  margin-bottom: 94px;
-  background-color: var(--background-title-footer);
   width: 1600px;
-  height: 600px;
-
+  background-color: var(--background-title-footer);
+  margin: 0 auto;
+  padding: 200px 0;
+  text-align: center;
 }
 .business-solutions {
   width: 696px;
-  margin-bottom: 0px;
-  margin-left: 452px;
-  margin-right: 452px;
-  margin-top: 0px;
-  padding-top: 200px;
+  margin: 0 auto;
+
   font-size: 44px;
   line-height: 1.36;
   font-weight: 900;
   letter-spacing: 0.06em;
   color: var(--white-color);
   text-transform: uppercase;
-  text-align:center;
+  text-align: center;
 }
 
 .order-services {
-  width: 216px;
-  height: 50px;
-  border: 0px;
-  margin-left: 692px;
-  margin-right: 692px;
   margin-top: 30px;
   font-family: "Roboto";
   font-size: 16px;
@@ -141,21 +140,29 @@ header .container {
   background-color: var(--blue-color);
   color: var(--white-color);
   cursor: pointer;
+  border-color: transparent;
+  border-radius: 4px;
 }
+
 .visually-hidden {
-   position: absolute; white-space: nowrap; width: 1px; height: 1px; overflow: hidden; border: 0; padding: 0; clip: rect(0 0 0 0); clip-path: inset(50%); margin: -1px; 
-  }
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
 .box-feature {
   width: 270px;
 }
 .box-feature-hidden {
   display: flex;
-  width: 1170px;
-  padding-left: 0px;
-  margin-left: 15px;
-  margin-top: 0px;
-  margin-bottom: 94px;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 .feature-list {
   font-size: 14px;
@@ -183,25 +190,22 @@ header .container {
   text-align: center;
   margin-bottom: 50px;
   margin-top: 0px;
-
-
 }
 .pictures-our-buisness {
   display: flex;
-  width: 1170px;
-  justify-content: space-between;
-  margin-top: 0px;
-  margin-left: 15px;
-  padding: 0px;
-  margin-bottom: 94px;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.imag-buisness {
+  width: 370px;
 }
 
 .section-our-command {
-  background-color: var(--footer-button-backgroung-color);
   width: 1600px;
-  padding-left: 0px;
-  margin-top: 0px;
-  margin-bottom: 94px;
+  background-color: var(--footer-button-backgroung-color);
+  margin: 0 auto;
+  padding: 94px 215px;
+  text-align: center;
 }
 .our-command {
   font-size: 36px;
@@ -209,23 +213,20 @@ header .container {
   font-weight: 700;
   letter-spacing: 0.03em;
   color: var(--basic-dark-color);
-  padding-top: 94px;
   text-align: center;
   margin-bottom: 50px;
-  margin-top: 0px;
 }
 .team-members-ul {
   display: flex;
-  width: 1170px;
-  padding: 0px;
-  justify-content: space-between;
-  margin-top: 0px;
-  margin-left: 215px;
-  margin-bottom: 94px;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 .team-members {
-  background-color: var(--white-color);
   width: 270px;
+  background-color: var(--white-color);
+}
+.team-members-text {
+  margin: 30px 0;
 }
 .name-command {
   font-size: 16px;
@@ -233,7 +234,7 @@ header .container {
   font-weight: 500;
   letter-spacing: 0.03em;
   color: var(--basic-dark-color);
-  margin-top: 30px;
+
   margin-bottom: 10px;
   text-align: center;
 }
@@ -249,21 +250,18 @@ header .container {
 .footer {
   background-color: var(--background-title-footer);
   width: 1600px;
-  height: 252px;
-  
+  padding: 60px 0;
 }
 .logo-down {
+  display: block;
   font-family: "Raleway";
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
   text-decoration: none;
   color: var(--white-color);
-  display: inline-block;
-  margin-left: 215px;
-  margin-top: 60px;
-  margin-bottom: 20px;
-
+  padding-left: 215px;
+  padding-bottom: 20px;
 }
 
 .contact-footer-adress {
@@ -288,19 +286,16 @@ header .container {
   text-decoration: none;
   color: var(--footer-adress-color);
 }
-.container-hidden {
-  width: 1200px;
-  margin-left: 200px;
-  margin-top: 94px;
+.portfolio {
+  padding-top: 94px;
 }
+
 .filter {
   display: flex;
-  justify-content: space-between;
-  margin-left: 312px;
-  margin-right: 312px;
-  padding-left: 0px;
-  margin-bottom: 34px;
-  
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-left: 297px;
+  padding-bottom: 34px;
 }
 .filter-button:hover,
 .filter-button:focus {
@@ -316,19 +311,23 @@ header .container {
   background-color: var(--footer-button-backgroung-color);
   color: var(--basic-dark-color);
   cursor: pointer;
+  border-color: transparent;
+  border-radius: 4px;
+  padding: 6px 22px;
 }
 .portfolio-projects {
   display: flex;
   flex-wrap: wrap;
-  width: 1170px;
-  margin-top: 0px;
-  margin-bottom: 94px;
   gap: 30px;
-  padding-left: 0px;
-  
 }
 .block-project {
   width: 370px;
+}
+.project-text {
+  padding: 20px 24px;
+  border-left: 1px solid var(--border-project);
+  border-right: 1px solid var(--border-project);
+  border-bottom: 1px solid var(--border-project);
 }
 .name-project {
   font-size: 18px;
@@ -336,19 +335,15 @@ header .container {
   font-weight: 700;
   letter-spacing: 0.06em;
   color: var(--basic-dark-color);
-  margin-top: 20px;
-  margin-left: 24px;
-  margin-bottom: 4px;
-
+  padding-bottom: 4px;
+  margin: 0px;
 }
 .type-project {
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  color: var(--header-contact-color)
-
+  margin: 0px;
+  color: var(--header-contact-color);
 }
 .contact-footer {
   font-style: normal;
