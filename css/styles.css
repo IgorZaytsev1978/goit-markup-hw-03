@@ -42,7 +42,7 @@ body {
   background-color: var(--white-color);
 }
 header {
-  border: 1px solid #ececec;
+  border-bottom: 1px solid #ececec;
 }
 header .container {
   display: flex;
@@ -53,13 +53,7 @@ header .container {
   padding: 0 15px;
 }
 
-section .b {
-  padding-bottom: 0;
-}
-section {
-  padding-bottom: 94px;
-  background-color: var(--white-color);
-}
+
 
 .navigation {
   display: flex;
@@ -134,8 +128,7 @@ section {
   text-align: center;
 }
 .business-solutions {
-  max-width: ;
-  width: 696px;
+  max-width: 696px;
   margin: 0 auto;
 
   font-size: 44px;
@@ -200,6 +193,9 @@ section {
   margin: 0px;
 }
 .section-two {
+  padding-top: 94px;
+}
+.section-three {
   padding-top: 94px;
 }
 .our-buisness {
@@ -275,7 +271,7 @@ section {
 }
 .logo-down {
   display: inline-block;
-  padding-bottom: 20px;
+  margin-bottom: 20px;
   font-family: "Raleway";
   font-size: 26px;
   line-height: 1.19;
@@ -307,6 +303,7 @@ section {
   color: var(--footer-adress-color);
   margin-bottom: 9px;
 }
+
 .contact-footer-tel {
   font-size: 14px;
   line-height: 1.71;
@@ -316,14 +313,15 @@ section {
 }
 .portfolio {
   padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .filter {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 30px;
-  padding-bottom: 50px;
+  gap: 8px;
+  margin-bottom: 50px;
 }
 .filter-button:hover,
 .filter-button:focus {
@@ -346,7 +344,7 @@ section {
 .portfolio-projects {
   display: flex;
   flex-wrap: wrap;
-  gap: 8px;
+  gap: 30px;
 }
 .project-text {
   padding-top: 20px;
@@ -364,7 +362,7 @@ section {
   letter-spacing: 0.06em;
   color: var(--basic-dark-color);
   margin-bottom: 4px;
-  margin: 0px;
+  margin-top: 0px;
 }
 .type-project {
   font-size: 16px;
